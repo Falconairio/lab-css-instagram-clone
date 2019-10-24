@@ -4,7 +4,183 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+  display:flex;
+  flex-direction: column;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#bluebackground {
+  width: 100%;
+  height: 280px;
+  position:relative;
+}
+#everything {
+  position: absolute;
+  float:right;
+  top: 0px;
+  left:0;
+  width:100%;
+  margin-top: 105px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.mainsection {
+  display: flex;
+  flex-direction: row;
+}
+.secondmainsection {
+  display: flex;
+  flex-direction:column;
+  margin-left: 50px;
+}
+#logoandlogin {
+  display: flex;
+  flex-direction: row;
+  height:100px;
+  width: 600px;
+}
+#maintext {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:none;
+}
+header img {
+  width:500px
+}
+#allcontainer {
+  display:flex;
+  flex-direction: column;
+}
+footer {
+  display:flex;
+  flex-direction: row;
+  padding-top:410px;
+  padding-left: 300px;
+
+}
+footer ul{
+  list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;;
+    font-size:0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color:#1c5380;
+}
+footer li {
+  margin-right: 10px;
+}
+footer a:link {
+  color:#1c5380;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #1c5380;
+  text-decoration: none;
+}
+
+#maintext {
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+#maintext h1 {
+  font-size: 30px;
+  color: #06365f;
+  width: 300px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+#maintext b {
+  font-weight: bold;
+  font-style: italic;
+}
+#maintext p {
+  width: 445px;
+  margin-bottom:25px;
+  line-height: 25px;
+}
+button {
+  width: 150px;
+  height: 50px;
+  margin-left: 100px;
+  background-color: #1c5380;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  font-size: 20px;
+  margin-bottom: -10px;
+  padding-bottom: -10px;
+  border-radius: 3px;
+  border-color: black;
+}
+button img {
+  width: 30px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+#text {
+  padding-top:40px;
+  padding-left: 40px;
+}
+#brandphotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 40px
+}
+#androidimage {
+  margin-left:30px;
 }
